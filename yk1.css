@@ -1,0 +1,199 @@
+body{
+    background-image: url(fea.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 231, 13, 0.932);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 30px;
+
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff9f9f8;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f5731dec;
+    
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(250, 35, 35, 0.521);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:rgba(31, 149, 245, 0.658);
+    border-radius: 30px;
+    transition: 1s;
+
+  }
+
+
+     /*logos borderi qvevit*/
+
+
+
+
+  .box {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 30px rgba(black, 0.2);
+    background: lighten(#f0f4c3, 10%);
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    margin-left: 800px;
+  }
+  
+  .wave {
+    opacity: 0.4;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    background: #0af;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+  }
+  
+  .wave.-three {
+    animation: drift 5000ms infinite linear;
+  }
+  
+  .wave.-two {
+    animation: drift 7000ms infinite linear;
+    opacity: 0.1;
+    background: yellow;
+  }
+  
+  .box:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(#e8a, 1),
+      rgba(#def, 0) 80%,
+      rgba(white, 0.5)
+    );
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    line-height: 300px;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.4em;
+    font-size: 24px;
+    text-shadow: 0 1px 0 rgba(black, 0.1);
+    text-indent: 0.3em;
+  }
+  @keyframes drift {
+    from {
+      transform: rotate(0deg);
+    }
+    from {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* box textis*/
+
+
+
+  @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+  #box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 400px;
+    color: rgba(0, 0, 0, 0.979);
+    font-family: 'Raleway';
+    font-size: 1.5rem;
+    margin-left: 600px;
+    margin-top: 100px;
+    
+  }
+  .gradient-border {
+    --borderWidth: 3px;
+   
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #2190f8fd, #1b6ae0fa, #fcf826de, #3377fde7, #edfd5af1, #1f53ffee, #1f53ffee);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 8s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+
+
